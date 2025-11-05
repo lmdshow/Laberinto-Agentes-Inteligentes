@@ -12,3 +12,12 @@ int Posicion::getX() {
 int Posicion::getY() {
     return y;
 }
+
+// Implementación de los setters
+void Posicion::setX(int nx) {
+    x = nx;
+}
+
+void Posicion::setY(int ny) {
+    y = ny;
+}

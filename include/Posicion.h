@@ -13,6 +13,10 @@ public:
     // Getters 
     int getX();
     int getY();
+
+    // Setters 
+    void setX(int nx);
+    void setY(int ny);
     
 };
 
