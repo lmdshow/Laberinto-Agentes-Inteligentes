@@ -1,41 +1,20 @@
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
+# Compilados
 *.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
 *.exe
 *.out
-*.app
+a.out
+laberinto
+laberinto.exe
 
-# debug information files
-*.dwo
+# Directorios
+obj/
+build/
+
+# IDEs
+.vscode/
+.vs/
+.idea/
+
+# Sistema
+.DS_Store
+Thumbs.db
