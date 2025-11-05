@@ -1,23 +1,8 @@
 #include "Posicion.h"
 
-Posicion::Posicion() {
-    x = 0;
-    y = 0;
-}
+// Constructor con lista de inicialización
+Posicion::Posicion(int x, int y) : x(x), y(y) {}
 
-int Posicion::getX() {
-    return x;
-}
-
-int Posicion::getY() {
-    return y;
-}
-
-// Implementación de los setters
-void Posicion::setX(int nx) {
-    x = nx;
-}
-
-void Posicion::setY(int ny) {
-    y = ny;
+bool Posicion::esIgual(const Posicion& otra) const {
+    return (x == otra.x && y == otra.y);
 }
