@@ -12,6 +12,10 @@ void Tablero::inicializarLaberinto() {
     }
 }
 
+  // Se agregó la validación de límites 
 int Tablero::getValor(int x, int y) {
-    return matriz[x][y];  
+    if(x >= 0 && x < 10 && y >= 0 && y < 10) {
+        return matriz[x][y];
+    }
+    return -1;  // Valor inválido para indicar error
 }
