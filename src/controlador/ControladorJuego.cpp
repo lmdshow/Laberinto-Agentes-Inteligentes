@@ -51,7 +51,7 @@ bool ControladorJuego::buscarSalidaRecursivo(Posicion& actual, bool visitado[10]
     
     // Marcar como visitado
     visitado[x][y] = true;
-    // FALTA: registrar en caminoRecorrido (ERROR intencional)
+    caminoRecorrido.push_back(actual);
     
     // Direcciones: arriba, derecha, abajo, izquierda
     int dx[] = {0, 1, 0, -1};
