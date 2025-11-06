@@ -6,8 +6,8 @@
 
 class ControladorJuego {
 private:
-    Tablero* tablero;  // ASOCIACIÓN
-    Avatar* avatar;    // ASOCIACIÓN
+    Tablero* tablero;
+    Avatar* avatar;
     
 public:
     ControladorJuego();
@@ -16,7 +16,9 @@ public:
     void iniciarJuego();
     bool ejecutarMovimiento(int direccion);
     
-    // FALTAN: getters para acceso desde Vista
+    // NUEVO: Getters con paso por referencia constante
+    const Tablero& getTablero() const { return *tablero; }
+    const Avatar& getAvatar() const { return *avatar; }
 };
 
 #endif
