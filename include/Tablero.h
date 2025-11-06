@@ -10,9 +10,7 @@ private:
 public:
     Tablero();
     void inicializarLaberinto();
-    
-    // getValor sin validación de límites
-    int getValor(int x, int y);
+    int getValor(int x, int y) const; // Se agregó el const a getValor
 };
 
 #endif
